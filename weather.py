@@ -25,7 +25,7 @@ try:
             state = raw_input()
         
             URL="https://api.openweathermap.org/data/2.5/weather"
-            PARAMS = {'q':[city,state],'appid':'745774c81d84372e1972cab0a2bdc2c2'}
+            PARAMS = {'q':[city,state],'appid':''}
             response = requests.get(url = URL, params = PARAMS)
             data = response.json()
             rawSpeed= data["wind"]["speed"]
